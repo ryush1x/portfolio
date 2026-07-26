@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Details — Rafi Al' Ayyubi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="project">
+
+<div class="decrypt-overlay" id="decryptOverlay">
+  <div class="do-inner">
+    [ <span id="doText">DECRYPTING_FILE</span> ]
+    <div class="do-bar"><div class="do-bar-fill" id="doFill"></div></div>
+  </div>
+</div>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<header>
+  <nav>
+    <div class="logo">R<span>A</span>_</div>
+    <a href="index.html" class="back-link"><span class="arrow">←</span> Back to Portfolio</a>
+  </nav>
+</header>
+
+<main>
+  <section class="doc-hero">
+    <div class="wrap">
+      <div class="breadcrumb anim-in" style="--d:.05s">Portfolio <span>/</span> Projects <span>/</span> <span id="crumbTitle">Case Study</span></div>
+      <div class="doc-tag anim-in" style="--d:.12s" id="docTag">Web App</div>
+      <h1 class="doc-title anim-in" style="--d:.2s" id="docTitle">Project Title <span class="accent">.</span></h1>
+      <p class="doc-summary anim-in" style="--d:.3s" id="docSummary">Short project summary goes here.</p>
+
+      <div class="doc-photo anim-in" style="--d:.4s">
+        <img class="doc-cover-img" id="docCoverImg" alt="" onerror="this.remove();">
+        <div class="glyph" id="docGlyph">01</div>
+        <span class="corner tl"></span><span class="corner br"></span>
+        <div class="doc-photo-tag">/documentation — project preview</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap doc-body">
+    <div class="doc-main">
+      <div class="doc-section anim-in" style="--d:.1s">
+        <div class="eyebrow">Overview</div>
+        <p id="docOverview"></p>
+      </div>
+      <div class="doc-section anim-in" style="--d:.16s">
+        <div class="eyebrow">The Problem</div>
+        <p id="docProblem"></p>
+      </div>
+      <div class="doc-section anim-in" style="--d:.22s">
+        <div class="eyebrow">The Solution</div>
+        <p id="docSolution"></p>
+        <ul id="docSolutionList"></ul>
+      </div>
+      <div class="doc-section anim-in" style="--d:.28s">
+        <div class="eyebrow">Results</div>
+        <p id="docResults"></p>
+      </div>
+      <div class="doc-section anim-in" style="--d:.34s" id="gallerySection">
+        <div class="eyebrow">Gallery</div>
+        <div class="doc-gallery" id="docGallery">
+          <div class="gallery-viewport">
+            <div class="glitch-stage" id="galleryStage"></div>
+          </div>
+          <div class="gallery-controls">
+            <button class="c-arrow" id="galPrev" aria-label="Previous image">←</button>
+            <div class="carousel-dots" id="galDots"></div>
+            <button class="c-arrow" id="galNext" aria-label="Next image">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="doc-side anim-in" style="--d:.2s">
+      <div class="side-card">
+        <div class="k">Tech Stack</div>
+        <div class="stack-row" id="docStack"></div>
+      </div>
+      <div class="side-card">
+        <div class="k">Links</div>
+        <a href="#" id="sourceLink" class="btn btn-primary">Source Code →</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="wrap">
+    <div class="doc-nav-footer">
+      <a href="index.html#projects" id="prevProject">← Previous Project</a>
+      <a href="index.html#projects" id="nextProject">Next Project →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Rafi Al' Ayyubi.</p>
+</footer>
+
+<script src="js/cursor.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/project.js"></script>
+</body>
+</html>

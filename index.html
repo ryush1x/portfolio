@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafi Al' Ayyubi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-logo">R<span>A</span>_</div>
+    <p class="pre-line">&gt; booting_portfolio.sys</p>
+    <div class="pre-bar"><div class="pre-bar-fill" id="preFill"></div></div>
+    <p class="pre-pct"><span id="prePct">0</span>%</p>
+  </div>
+</div>
+
+<div id="pageTransition" class="page-transition">
+  <div class="pt-inner">
+    [ <span id="ptText">OPENING_FILE</span> ]
+    <div class="pt-bar"><div class="pt-bar-fill" id="ptFill"></div></div>
+  </div>
+</div>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <div class="logo">R<span>A</span>_</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap hero-inner">
+    <div class="term-bar anim-in" style="--d:.05s">
+      <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+      <span style="margin-left:6px;">anonymous@me — bash</span>
+    </div>
+    <div class="term-line anim-in" style="--d:.15s"><span class="prompt">anonymous@me:~$</span> <span id="term-type"></span></div>
+
+    <h1 class="anim-in" style="--d:.28s"><span class="glitch" data-text="Rafi Al' Ayyubi">Rafi Al' Ayyubi</span></h1>
+    <div class="role-line anim-in" style="--d:.42s">// <span id="role-type"></span></div>
+    <p class="lede anim-in" style="--d:.55s">"A Vibe Coder", turning complex problems into clean behind the system, and build usable products. Currently open to new opportunities.</p>
+    <div class="btn-row anim-in" style="--d:.68s">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="resume.html" id="resumeBtn" class="btn btn-ghost">Resume</a>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL<div class="line"></div></div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <h2 class="section-title reveal eyebrow">About</h2>
+
+    <div class="about-grid" style="margin-top:44px;">
+      <div class="photo-frame reveal">
+        <img src="assets/images/profile.jpg" alt="Rafi Al' Ayyubi"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="avatar-placeholder" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        </div>
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <div class="photo-tag">HOLLA!!</div>
+      </div>
+
+      <div class="about-copy reveal">
+        <h3>Hello, I'm</h3>
+        <div class="name-big">Rafi Al' Ayyubi <span class="accent">.</span></div>
+        <p><strong>I am a backend-focused "vibe coder"</strong> with a keen interest in cybersecurity. I have developed several projects, ranging from collaborations with friends to research initiatives with lecturers</p>
+        <p>My role within the team typically involves writing clean, well-documented code and identifying and fixing bugs. I am also highly adaptable to change and possess strong communication skills.</p>
+        <p>When I'm not at the keyboard, I'm usually playing basketball, and listening to music.</p>
+
+        <div class="meta-grid">
+          <div class="meta-item"><div class="k">Location</div><div class="v">Balikpapan, Indonesia</div></div>
+          <div class="meta-item"><div class="k">Focus</div><div class="v">Backend &amp; Server-Side Development</div></div>
+          <div class="meta-item"><div class="k">Experience</div><div class="v">2+ Years</div></div>
+          <div class="meta-item"><div class="k">Availability</div><div class="v">Open to Work</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-strip reveal">
+      <div class="stat"><div class="num" data-count="2">0</div><div class="lbl">Years Experience</div></div>
+      <div class="stat"><div class="num" data-count="10">0</div><div class="lbl">Projects Done</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="wrap">
+    <h2 class="section-title reveal eyebrow">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-row reveal">
+        <div class="top"><span class="name">HTML &amp; CSS</span><span class="pct">85%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-row reveal">
+        <div class="top"><span class="name">JavaScript</span><span class="pct">76%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="76"></div></div>
+      </div>
+      <div class="skill-row reveal">
+        <div class="top"><span class="name">Express</span><span class="pct">75%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-row reveal">
+        <div class="top"><span class="name">Node.js</span><span class="pct">71%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="71"></div></div>
+      </div>
+      <div class="skill-row reveal">
+        <div class="top"><span class="name">MySQL</span><span class="pct">83%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="83"></div></div>
+      </div>
+      <div class="skill-row reveal">
+        <div class="top"><span class="name">Git &amp; Version Control</span><span class="pct">80%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+      </div>
+    </div>
+
+    <div class="tool-cloud reveal">
+      <div class="eyebrow">Also Familiar With</div>
+      <div class="tool-list">
+        <span class="tool-chip">C++</span>
+        <span class="tool-chip">Python</span>
+        <span class="tool-chip">Dart</span>
+        <span class="tool-chip">Flask</span>
+        <span class="tool-chip">Tensorflow</span>
+        <span class="tool-chip">OpenCV</span>
+        <span class="tool-chip">Flutter</span>
+        <span class="tool-chip">PostgreSQL</span>
+        <span class="tool-chip">Docker</span>
+        <span class="tool-chip">Tailwind CSS</span>
+        <span class="tool-chip">Figma</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <h2 class="section-title reveal eyebrow">Projects</h2>
+
+    <div class="carousel reveal" id="carousel">
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="slide">
+            <div class="slide-visual">
+              <img class="slide-thumb" src="assets/images/projects/project-1.jpg" alt="E-Signature preview" onerror="this.remove();" style="object-position:left;">
+              <div class="glyph">01</div>
+            </div>
+            <div class="slide-body">
+              <div class="tag">Web App</div>
+              <h3>E-Signature</h3>
+              <p>An AI-based digital signature website to assist with campus administration.</p>
+              <div class="stack-row"><span>React.js</span><span>Express.js</span><span>Flask</span><span>Tensorflow</span><span>Dart</span><span>JavaScript</span><span>Python</span><span>Dart</span><span>MySQL</span></div>
+              <div class="slide-links"><a href="https://github.com/E-Signature-Capstone-Project">Source Code →</a></div>
+              <div class="case-hint">View full case study <span class="arrow">→</span></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-visual">
+              <img class="slide-thumb" src="assets/images/projects/project-2.jpg" alt="Kernel Store preview" onerror="this.remove();" style="object-position:left;">
+              <div class="glyph">02</div>
+            </div>
+            <div class="slide-body">
+              <div class="tag">Web App</div>
+              <h3>E-Waste App</h3>
+              <p>IoT-based waste bin monitoring website for easy waste management</p>
+              <div class="stack-row"><span>Arduino</span><span>React.js</span><span>C++</span><span>Supabase</span><span>Blynk</span><span>MySQL</span></div>
+              <div class="slide-links"><a href="https://github.com/ryush1x/backend-e-waste-app">Source Code →</a></div>
+              <div class="case-hint">View full case study <span class="arrow">→</span></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-visual">
+              <img class="slide-thumb" src="assets/images/projects/project-3.jpg" alt="Pulse Habit Tracker preview" onerror="this.remove();">
+              <div class="glyph">03</div>
+            </div>
+            <div class="slide-body">
+              <div class="tag">Game App</div>
+              <h3>Atma</h3>
+              <p>2D Platformer game application built using the Unity engine.</p>
+              <div class="stack-row"><span>C#</span><span>Unity</span></div>
+              <div class="slide-links"><a href="https://github.com/ryushix/Atma">Source Code →</a></div>
+              <div class="case-hint">View full case study <span class="arrow">→</span></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-visual">
+              <img class="slide-thumb" src="assets/images/projects/project-4.jpg" alt="Cipher API Explorer preview" onerror="this.remove();">
+              <div class="glyph">04</div>
+            </div>
+            <div class="slide-body">
+              <div class="tag">Simulator</div>
+              <h3>Projectile Motion Simulator</h3>
+              <p>A simulation website designed to help users understand the physics concept of projectile motion.</p>
+              <div class="stack-row"><span>React.js</span><span>Vite.js</span><span>JavaScript</span><span>HTML5 Canvas</span></div>
+              <div class="slide-links"><a href="https://github.com/rvyhvn/judi-parabola">Source Code →</a></div>
+              <div class="case-hint">View full case study <span class="arrow">→</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <div class="carousel-dots" id="carouselDots"></div>
+        <div class="carousel-arrows">
+          <button class="c-arrow" id="prevSlide" aria-label="Previous project">←</button>
+          <button class="c-arrow" id="nextSlide" aria-label="Next project">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="wrap">
+    <h2 class="section-title reveal eyebrow">Experience</h2>
+
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <div class="exp-visual"><div class="glitch-stage" id="expVisual1"></div></div>
+        <span class="exp-date">2025 — Present</span>
+        <div class="exp-role">IT Support</div>
+        <div class="exp-org">Balikpapan University</div>
+        <ul class="exp-desc">
+          <li>Act as a troubleshoter in the event of technical issues</li>
+          <li>Serving as an operator for various campus and faculty events</li>
+          <li>Acting as an internet network analyst in the event of network issues.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-visual"><div class="glitch-stage" id="expVisual2"></div></div>
+        <span class="exp-date">2024 — 2025</span>
+        <div class="exp-role">Cloud Computing Cohort</div>
+        <div class="exp-org">Dicoding Sertification</div>
+        <ul class="exp-desc">
+          <li>An AI-based capstone project undertaken as part of a team competing against other teams</li>
+          <li>Gain experience using Google Cloud features or services</li>
+          <li>Improving English communication skills with each others</li>
+        </ul>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-visual"><div class="glitch-stage" id="expVisual2"></div></div>
+        <span class="exp-date">2023</span>
+        <div class="exp-role">Hackathon Finalist</div>
+        <div class="exp-org">Balikpapan Goverment</div>
+        <ul class="exp-desc">
+          <li>A competition organized by the Balikpapan City Government with the theme "Smart City."</li>
+          <li>Build a product or application with a team and compete against other teams within 24 hours.</li>
+          <li>Meeting new friends from various campuses in Balikpapan.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-visual"><div class="glitch-stage" id="expVisual2"></div></div>
+        <span class="exp-date">2022</span>
+        <div class="exp-role">1st Place The Most Creative Student (Math)</div>
+        <div class="exp-org">JILC Makassar</div>
+        <ul class="exp-desc">
+          <li>A competition organized by the JILC Makassar with the theme "The Most Creative Student."</li>
+          <li>Solving Higher-Order Thinking Skills (HOTS) mathematics problems.</li>
+          <li>Honing teaching skills to gain a deeper understanding of what has been learned.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <h2 class="section-title reveal eyebrow">Contact</h2>
+
+    <div class="contact-wrap">
+      <div class="contact-copy reveal">
+        <h3 class="about-copy" style="font-family:var(--display); font-size:1.15rem;">Have a project in mind?</h3>
+        <p>I'm currently open to new roles and freelance collaborations. Whether you have a question or just want to say hi, my inbox is open.</p>
+        <br>
+        <div class="contact-links">
+          <a href="mailto:rafialayyubi08@gmail.com"><span class="ico">✉</span> rafialayyubi08@gmail.com</a>
+          <a href="https://www.linkedin.com/in/rafialayyubi/"><span class="ico">in</span> linkedin.com/in/rafialayyubi</a>
+          <a href="https://github.com/ryush1x"><span class="ico">gh</span> github.com/ryush1x</a>
+        </div>
+        <br>
+
+        <div class="mini-terminal" id="miniTerminal">
+          <div class="term-bar">
+            <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+            <span style="margin-left:6px;">anonymous@me — bash</span>
+          </div>
+          <div class="mt-output" id="mtOutput"></div>
+          <div class="mt-input-row">
+            <span class="mt-prompt">anonymous@me:~$</span>
+            <input type="text" id="mtInput" class="mt-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 Rafi Al' Ayyubi.</p>
+    <a href="#home" class="to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/cursor.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/terminal.js"></script>
+</body>
+</html>
