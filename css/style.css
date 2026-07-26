@@ -111,6 +111,8 @@ body.loaded .anim-in{
   background:var(--void);
   display:flex; align-items:center; justify-content:center;
   transition:opacity .6s ease, visibility .6s ease;
+  height:100vh;
+  height:100dvh;
 }
 #preloader.done{ opacity:0; visibility:hidden; pointer-events:none; }
 .pre-inner{text-align:center;}
@@ -129,6 +131,8 @@ body.loaded .anim-in{
   clip-path: circle(0% at 50% 50%);
   transition: clip-path .6s cubic-bezier(.65,0,.35,1);
   pointer-events:none;
+  height:100vh;
+  height:100dvh;
 }
 .page-transition.active{ clip-path: circle(150% at 50% 50%); pointer-events:all; }
 .pt-inner{ text-align:center; font-family:var(--mono); color:var(--cyan); letter-spacing:.14em; text-transform:uppercase; font-size:.8rem; }
@@ -141,6 +145,8 @@ body.loaded .anim-in{
   display:flex; align-items:center; justify-content:center;
   clip-path: circle(150% at 50% 50%);
   transition: clip-path .65s cubic-bezier(.65,0,.35,1);
+  height:100vh;
+  height:100dvh;
 }
 .decrypt-overlay.reveal{ clip-path: circle(0% at 50% 50%); }
 .do-inner{ text-align:center; font-family:var(--mono); color:var(--cyan); letter-spacing:.14em; text-transform:uppercase; font-size:.8rem; }
@@ -153,6 +159,8 @@ body.loaded .anim-in{
   display:flex; align-items:center; justify-content:center;
   clip-path: inset(0 0 0 0);
   transition: clip-path .9s cubic-bezier(.65,0,.35,1);
+  height:100vh;
+  height:100dvh;
 }
 .scan-overlay.reveal{ clip-path: inset(100% 0 0 0); }
 .so-inner{
@@ -671,7 +679,8 @@ nav{
   background-size:28px 28px;
 }
 .doc-cover-img{
-  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;
+  position:absolute; inset:0; width:100%; height:100%; object-fit:contain; z-index:0;
+  background:var(--panel-2);
 }
 .doc-photo .glyph{ font-family:var(--display); font-weight:800; font-size:5rem; color:rgba(223,233,245,.1); position:relative; z-index:1; animation:glyphFloat 6s ease-in-out infinite; }
 .doc-photo .corner{ position:absolute; width:20px; height:20px; border-color:var(--cyan); opacity:.7; animation:cornerPulse 3.6s ease-in-out infinite; z-index:2; }
