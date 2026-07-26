@@ -18,7 +18,7 @@
 body[data-page="project"], body[data-page="resume"]{ --maxw: 980px; }
 
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth; overflow-x:hidden;}
+html{scroll-behavior:smooth;}
 
 body{
   background:var(--void);
@@ -143,17 +143,7 @@ body.loaded .anim-in{
   transition: clip-path .65s cubic-bezier(.65,0,.35,1);
 }
 .decrypt-overlay.reveal{ clip-path: circle(0% at 50% 50%); }
-.do-inner{
-  text-align:center;
-  font-family:var(--mono);
-  color:var(--cyan);
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  font-size:.8rem;
-  max-width:90vw;
-  overflow-wrap:break-word;
-  word-break:break-word;
-}
+.do-inner{ text-align:center; font-family:var(--mono); color:var(--cyan); letter-spacing:.14em; text-transform:uppercase; font-size:.8rem; }
 .do-bar{ width:220px; height:2px; background:var(--panel-2); margin:14px auto 0; overflow:hidden; border-radius:2px; }
 .do-bar-fill{ height:100%; width:0%; background:linear-gradient(90deg,var(--cyan),var(--magenta)); box-shadow:0 0 10px var(--cyan); transition:width .18s linear; }
 
