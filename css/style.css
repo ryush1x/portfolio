@@ -217,7 +217,7 @@ header{
 }
 body[data-page="project"] header, body[data-page="resume"] header{ position:sticky; }
 
-nav{
+header nav{
   max-width:var(--maxw); margin:0 auto; padding:16px 28px;
   display:flex; align-items:center; justify-content:space-between;
 }
@@ -783,6 +783,11 @@ footer{
   font-family:var(--mono); font-size:.72rem; color:var(--cyan); display:flex; align-items:center; gap:8px;
 }
 body[data-page="project"] footer p, body[data-page="resume"] footer p{ text-align:center; font-size:.68rem; color:var(--muted); }
+.webring{display:flex; align-items:center; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:16px; font-family:var(--mono); font-size:.7rem;}
+.webring a{display:inline-flex; align-items:center; padding:5px 10px; border-radius:5px; border:1px solid var(--panel-border); color:var(--muted); transition:.25s;}
+.webring a:not(.webring-name):hover{color:var(--cyan); border-color:var(--cyan); background:rgba(0,240,255,.06);}
+.webring .webring-name{border-color:transparent; letter-spacing:.08em; text-transform:uppercase; color:var(--cyan);}
+body[data-page="home"] .webring{justify-content:flex-start;}
 
 
 .resume-hero{padding:70px 0 24px;}
